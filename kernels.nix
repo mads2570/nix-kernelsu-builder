@@ -9,7 +9,7 @@ _: {
         amazon-fire-hd-karnak = {
           anyKernelVariant = "osm0sis";
           kernelSU.enable = false;
-          kernelDefconfigs = [ "lineageos_karnak_defconfig" ];
+          kernelDefconfigs = [ "a42xq_eur_open_defconfig" ];
           kernelImageName = "Image.gz-dtb";
           kernelMakeFlags = [
             "KCFLAGS=\"-w\""
@@ -32,10 +32,10 @@ _: {
 
           kernelDefconfigs = [
             "gki_defconfig"
-            "vendor/kalama_GKI.config"
-            "vendor/ext_config/moto-kalama.config"
-            "vendor/ext_config/moto-kalama-gki.config"
-            "vendor/ext_config/moto-kalama-rtwo.config"
+            "ranchu64_defconfig"
+            "defconfig"
+            "vendor/a42xq_eur_open_defconfig"
+            
           ];
           kernelImageName = "Image";
           kernelMakeFlags = [
@@ -81,7 +81,7 @@ _: {
           anyKernelVariant = "osm0sis";
           clangVersion = "latest";
           kernelSU.variant = "next";
-          kernelDefconfigs = [ "blu_spark_defconfig" ];
+          kernelDefconfigs = [ "a42xq_eur_open_defconfig" ];
           kernelImageName = "Image";
           kernelSrc = sources.linux-oneplus-8t-blu-spark.src;
         };
