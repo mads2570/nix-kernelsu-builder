@@ -34,25 +34,11 @@ src.webpage = "https://api.github.com/repos/rifsxd/KernelSU-Next/releases?per_pa
 src.regex = "download\\/v[0-9\\._]+\\/KernelSU[^\"]*_([0-9]+)-release\\.apk"
 fetch.url = "https://example.com"
 
-[linux-amazon-karnak]
-src.git = "https://github.com/mt8163/android_kernel_amazon_karnak_4.9.git"
-src.branch = "lineage-20.0"
-fetch.github = "mt8163/android_kernel_amazon_karnak_4.9"
+[linux-samsung-a42xq]
+src.git = "https://github.com/mads2570/a42-kernel.git"
+src.branch = "main"
+fetch.github = "mads2570/a42-kernel"
 
-[linux-moto-rtwo-lineageos-21]
-src.git = "https://github.com/LineageOS/android_kernel_motorola_sm8550.git"
-src.branch = "lineage-21"
-fetch.github = "LineageOS/android_kernel_motorola_sm8550"
-
-[linux-moto-rtwo-lineageos-22_1]
-src.git = "https://github.com/LineageOS/android_kernel_motorola_sm8550.git"
-src.branch = "lineage-22.1"
-fetch.github = "LineageOS/android_kernel_motorola_sm8550"
-
-[linux-oneplus-8t-blu-spark]
-src.git = "https://github.com/engstk/op8.git"
-src.branch = "blu_spark-14-custom"
-fetch.github = "engstk/op8"
 
 [susfs-android13-5_15]
 src.git = "https://gitlab.com/simonpunk/susfs4ksu.git"
