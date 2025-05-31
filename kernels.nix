@@ -6,17 +6,17 @@ _: {
     in
     {
       kernelsu = {
-        amazon-fire-hd-karnak = {
+        samsung-a42xq = {
           anyKernelVariant = "osm0sis";
-          kernelSU.enable = false;
+          kernelSU.enable = true;
           kernelDefconfigs = [ "a42xq_eur_open_defconfig" ];
           kernelImageName = "Image.gz-dtb";
           kernelMakeFlags = [
             "KCFLAGS=\"-w\""
             "KCPPFLAGS=\"-w\""
           ];
-          kernelSrc = sources.linux-amazon-karnak.src;
-          oemBootImg = boot/amazon-fire-hd-karnak.img;
+          kernelSrc = https://github.com/mads2570/a42-kernel.git;
+          oemBootImg = https://github.com/mads2570/a42xq_boot.img/raw/master/boot.img;
         };
 
         moto-rtwo-lineageos-21 = {
@@ -45,7 +45,7 @@ _: {
           kernelPatches = [
             "${sources.wildplus-kernel-patches.src}/69_hide_stuff.patch"
           ];
-          kernelSrc = sources.linux-moto-rtwo-lineageos-21.src;
+          kernelSrc = https://github.com/mads2570/a42-kernel.git;
         };
 
         moto-rtwo-lineageos-22_1 = {
@@ -61,10 +61,8 @@ _: {
 
           kernelDefconfigs = [
             "gki_defconfig"
-            "vendor/kalama_GKI.config"
-            "vendor/ext_config/moto-kalama.config"
-            "vendor/ext_config/moto-kalama-gki.config"
-            "vendor/ext_config/moto-kalama-rtwo.config"
+            "vendor/a42xq_eur_open_defconfig"
+
           ];
           kernelImageName = "Image";
           kernelMakeFlags = [
@@ -74,7 +72,7 @@ _: {
           kernelPatches = [
             "${sources.wildplus-kernel-patches.src}/69_hide_stuff.patch"
           ];
-          kernelSrc = sources.linux-moto-rtwo-lineageos-22_1.src;
+          kernelSrc = https://github.com/mads2570/a42-kernel.git;
         };
 
         oneplus-8t-blu-spark = {
@@ -83,7 +81,7 @@ _: {
           kernelSU.variant = "next";
           kernelDefconfigs = [ "a42xq_eur_open_defconfig" ];
           kernelImageName = "Image";
-          kernelSrc = sources.linux-oneplus-8t-blu-spark.src;
+          kernelSrc = https://github.com/mads2570/a42-kernel.git;
         };
       };
     };
