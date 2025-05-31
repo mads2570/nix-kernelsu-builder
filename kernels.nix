@@ -19,7 +19,7 @@ _: {
           oemBootImg = https://github.com/mads2570/a42xq_boot.img/raw/master/boot.img;
         };
 
-        moto-rtwo-lineageos-21 = {
+        samsung-a42xq  = {
           anyKernelVariant = "kernelsu";
           clangVersion = "latest";
 
@@ -48,7 +48,7 @@ _: {
           kernelSrc = https://github.com/mads2570/a42-kernel.git;
         };
 
-        moto-rtwo-lineageos-22_1 = {
+        samsung-a42xq  = {
           anyKernelVariant = "kernelsu";
           clangVersion = "latest";
 
@@ -75,7 +75,7 @@ _: {
           kernelSrc = https://github.com/mads2570/a42-kernel.git;
         };
 
-        oneplus-8t-blu-spark = {
+         samsung-a42xq  = {
           anyKernelVariant = "osm0sis";
           clangVersion = "latest";
           kernelSU.variant = "next";
