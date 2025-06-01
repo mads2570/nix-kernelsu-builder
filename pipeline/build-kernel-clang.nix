@@ -40,7 +40,7 @@ let
     "LD=ld.lld"
     "LLVM=1"
     "LLVM_IAS=1"
-    "CLANG_TRIPLE=aarch64-linux-gnu-"
+    "CLANG_TRIPLE=aarch64-linux-gnu- vendor/a42xq_eur_open_defconfig"
   ] ++ makeFlags;
 
   defconfig = lib.last defconfigs;
