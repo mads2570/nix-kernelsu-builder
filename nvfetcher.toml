@@ -7,8 +7,8 @@ src.git = "https://github.com/osm0sis/AnyKernel3.git"
 fetch.github = "osm0sis/AnyKernel3"
 
 [gcc-aarch64-linux-android]
-src.git = "https://android.googlesource.com/platform/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9"
-fetch.github = "platform/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9"
+src.git = "https://github.com/JackA1ltman/Google-GCC-Android-4.9.git"
+fetch.github = "JackA1ltman/Google-GCC-Android-4.9.git"
 
 [gcc-arm-linux-androideabi]
 src.git = "https://github.com/KudProject/arm-linux-androideabi-4.9.git"
